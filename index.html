@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Quote Generator</title>
+
+    <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=github.com">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quote-container" id="quote-container">
+        <!-- Quote -->
+        <div class="quote-text">
+            <!-- Quote Icon -->
+            <i class="fas fa-quote-left"></i>
+            <!-- Quote text -->
+            <span id="quote"></span>
+        </div>
+        <!-- Quote Author -->
+        <div class="quote-author">
+            <span id="author"></span>
+        </div>
+        <!-- Buttons -->
+        <div class="button-container">
+            <div class="voice-tweet">
+                <!-- Text to speech button -->
+                <button class="voice">
+                    <i class="fa-solid fa-volume-high"></i>
+                </button>
+                <!-- Twitter Button -->
+                <button id="twitter-button" title="Tweet This!">
+                    <!-- Twitter Icon -->
+                    <i class="fab fa-twitter"></i>
+                </button>
+            </div>
+            <!-- New Quote -->
+            <button id="new-quote">New Quote</button>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <h2>Made with <span style="font-size:2.5rem;color:red;">&hearts;</span> by <a href="https://github.com/Dhruv-Srivastava" target="_blank">Dhruv Srivastava</a></h2>
+    </footer>
+    <!-- Loader -->
+    <div class="loader">
+    </div>
+    
+    <!-- Script below -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
